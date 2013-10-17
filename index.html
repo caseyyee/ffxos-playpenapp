@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Exchange the line above for this to enable offline support
+    <html manifest="manifest.appcache">
+
+    Please make your homework before doing this:
+        http://www.alistapart.com/articles/application-cache-is-a-douchebag/
+        http://appcachefacts.info
+
+    This might be necessary to set up on your server, to make sure
+    files are updated when the appcache file itself is:
+        https://github.com/robnyman/Firefox-OS-Boilerplate-App/blob/gh-pages/.htaccess
+ -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/playground.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/headers.css"> -->
+<!--     <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/toolbars.css"> -->
+    <title>FFxOS Playpen</title>
+</head>
+
+<body>
+
+    <section id="intro">
+        
+                
+        <button id="menu">Menu</button>
+
+        <div id="options">
+            <ul>
+                <li id="online-status" title="Online"> Online</li>
+                <li id="reload"> Refresh</li>
+                <li id="install"> Install App</li>
+            </ul>
+        </div>
+
+        <header>
+            <hgroup>
+                <h2>Welcome to</h2>
+                <h1>UX Playpen</h1>
+            </hgroup>
+        </header>
+
+        <div id="continue">
+            <div class="up-arrow"></div>
+            <div class="up-arrow"></div>
+            <div class="up-arrow"></div>
+            
+            <span>Swipe up</span>
+        </div>
+    </section>
+
+
+    <div id="main">
+        <ul id="apps">
+        </ul>
+    </div>
+
+    
+    <script type="text/javascript" src="js/gesture_detector.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/webapp.js"></script>
+    <script type="text/javascript" src="js/offline.js"></script>
+
+    <!--
+        Loosely based on fxosstub: https://github.com/Jaxo/fxosstub
+    -->
+
+</body>
+</html>
